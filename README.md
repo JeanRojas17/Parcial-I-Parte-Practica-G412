@@ -41,16 +41,16 @@ classDiagram
         + setTipo(String tipo)
         + toString() String
     }
-    class LibroTextoUniajc {
+    class LibroTextoUNIAC {
         - facultad: String
-        + «constructor» LibroTextoUniajc(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados, String curso, String facultad)
+        + «constructor» LibroTextoUNIAC(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados, String curso, String facultad)
         + getFacultad() String
         + setFacultad(String facultad)
         + toString() String
     }
     Libro <|-- LibroTexto : extends
     Libro <|-- Novela : extends
-    LibroTexto <|-- LibroTextoUniajc : extends
+    LibroTexto <|-- LibroTextoUNIAC : extends
 ```
 
 ## Dos situaciones donde NO sería posible la herencia:
