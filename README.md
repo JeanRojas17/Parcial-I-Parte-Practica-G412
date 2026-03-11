@@ -1,4 +1,4 @@
-# Parcial I - Parte practica G412
+# **Parcial I - Parte practica G412**
 
 ### Integrantes:
 - **Jean Paul Rojas Herrera**
@@ -57,7 +57,7 @@ classDiagram
 
 **Situación 1 - Atributos privados:** Los atributos de Libro son private, lo que significa que las clases hijas no pueden acceder directamente a ellos, solo a través de los getters y setters. 
 
-```
+```java
 // Esto fallaría en LibroTexto:
 public String toString() {
     return titulo; // ERROR: titulo es private en Libro
@@ -68,14 +68,14 @@ public String toString() {
 
 **Situación 2 — Si la clase fuera final:** Si Libro estuviera declarada como final, ninguna clase podría heredar de ella. 
 
-```
+```java
 public final class Libro { // Con esto, LibroTexto, Novela, etc. NO podrían existir
 }
 ```
 
 ## Dos nuevos atributos y un método adicional con sentido:
 
-```
+```java
 // En clase Libro: fecha de publicación y editorial
 private int anioPublicacion;
 private String editorial;
